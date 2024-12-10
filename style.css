@@ -1,13 +1,13 @@
 /* B084CC - pretty purple
- 190933 - really dark purple*/
-
-
+ 190933 - really dark purple
+ D8D8F6 pretty light purple*/
+ 
 body {
-    background-color: #F7A9A8;
+    background-color: #190933;
 }
 
 div {
-    background-color: white;
+    background-color: #D8D8F6;
     margin: 20px;
     padding: 15px;
     border-radius: 5px;
@@ -26,3 +26,76 @@ p {
     max-width: fit-content;
     margin-inline: auto;
 }
+
+nav a {
+    background-color: #D8D8F6;
+    padding: 20px;
+    margin: 10px;
+    display: block;
+    font-size: 18px
+}
+
+nav {
+    background-color: #B084CC;
+    padding: 25px;
+    margin-inline: auto;
+    max-width: max-content;
+    justify-content: space-between;
+    color: #5f33a6;
+    
+}
+/*list-style-type: none gets rid of bullets*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+  }
+
+  li {
+    display:flex;
+    flex: 1;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+  }
+
+
+  /*stolen from w3schools for side navbar*/
+
+  /* The sidenav */
+.sidenav {
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    background-color: #D8D8F6;
+    display: flex;
+    align-items: center
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
