@@ -4,6 +4,8 @@
  
 body {
     background-color: #190933;
+    padding: 0px;
+    margin: 0px
 }
 
 div {
@@ -15,6 +17,18 @@ div {
     max-width: fit-content;
     margin-inline: auto;
     justify-content: space-between;
+}
+
+header {
+    background-color: #D8D8F6;
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 2px 4px rgba(104, 0, 106, 0.1);
+    margin: 0px;
+}
+
+footer {
+    min-height: 50px;
 }
 
 p {
@@ -56,7 +70,7 @@ ul {
     justify-content: space-evenly;
   }
 
-  li {
+li {
     display:flex;
     flex: 1;
     justify-content: space-around;
@@ -84,7 +98,8 @@ ul {
   
   /* When you mouse over the navigation links, change their color */
   .sidenav a:hover {
-    color: #f1f1f1;
+    color: #f9e4ff;
+    background-color: #6c55ff
   }
   
   

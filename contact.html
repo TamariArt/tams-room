@@ -5,16 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href= "style.css">
     <title>Contact Me!</title>
+
+    <nav id ="sidenav" class ="sidenav">
+        <ul>
+            <li><a href="index.html"> Home </a></li>
+            <li><a href="contact.html"> Contact </a></li>
+            <li><a href="projects.html"> Projects </a></li>
+        </ul>
+    </nav>
+
 </head>
 <body>
-    <form>
-        <input> 
-        <p> Email:</p>
 
-        <textarea>
-            Send me a message!
-        </textarea>
+    <header>
+        <p> Contact Me! </p>
+    </header>
 
-    </form>
+
+    <div>
+        <form>
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname"><br><br>
+            <label for="lname">Last name:</label>
+            <input type="text" id="lname" name="lname"><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
 </body>
 </html>
