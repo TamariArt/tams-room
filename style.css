@@ -1,11 +1,17 @@
 /* B084CC - pretty purple
  190933 - really dark purple
  D8D8F6 pretty light purple*/
+
+html {
+  min-height: 100%;
+  background-image: linear-gradient(to bottom right, #b689ff, #00ae9a);
+}
  
 body {
-    background-color: #190933;
+    
     padding: 0px;
-    margin: 0px
+    margin: 0px;
+    box-sizing: border-box;
 }
 
 div {
@@ -25,6 +31,7 @@ header {
     padding: 15px;
     box-shadow: 0px 2px 4px rgba(104, 0, 106, 0.1);
     margin: 0px;
+    box-sizing: border-box;
 }
 
 footer {
