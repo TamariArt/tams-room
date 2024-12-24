@@ -6,3 +6,10 @@ my website!!!! officially my portfolio for just about everything
 # 12/10/2024
 
 - worked on the nav bar, trying a right side navbar this time around
+- had some styling issues, basically had to relearn flexbox 
+
+- # 12/17/2024
+
+- reworked some of the uglier pages like projects
+- added a gradient background for some visual interest
+- i really want to add 3d elements and maybe some animations with animate.css
