@@ -13,3 +13,7 @@ my website!!!! officially my portfolio for just about everything
 - reworked some of the uglier pages like projects
 - added a gradient background for some visual interest
 - i really want to add 3d elements and maybe some animations with animate.css
+
+- # 6/5/2025
+
+- Gonna work on going from regular old html/css/js to React since I've never actually used react before :P
