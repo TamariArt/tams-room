@@ -89,7 +89,7 @@ nav a {
     padding: 20px;
     margin: 10px;
     display: block;
-    font-size: 18px
+    font-size: 2vw
 }
 
 nav {
@@ -122,12 +122,16 @@ li {
   }
 
 
-  /*stolen from w3schools for side navbar*/
+  /*stolen from w3schools for side navbar
+  width is auto because fixed width causes issues on mobile
+
+  */
 
   /* The sidenav */
 .sidenav {
     height: 100%;
-    width: 200px;
+    width: auto;
+    max-width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -153,7 +157,31 @@ li {
   }
   
   /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+
+/* me note, this is considered a media query */
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav a {font-size: 1vw;}
   }
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        position: relative;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
+
+/* query to switch between col and row layout if smol enough */
+
+@media screen and (max-width: 300px) {
+    ul {
+        flex-direction: row;
+    }
+
+    li {
+        flex: none;
+        margin: 0 10px;
+    }
+}
