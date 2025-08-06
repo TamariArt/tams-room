@@ -2,15 +2,20 @@
  190933 - really dark purple
  D8D8F6 pretty light purple*/
 
+/* selectors cheat sheet for me
+# -> for IDs
+. -> for classes
+ */
+
 html {
   min-height: 100%;
-  background-image: linear-gradient(to bottom right, #b689ff, #00ae9a);
+  background-image: linear-gradient(to bottom right, #b689ff, #00368f);
 }
  
 body {
     
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -19,18 +24,30 @@ div {
     margin: 20px;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(104, 0, 106, 0.1);
+    box-shadow: 0 2px 4px rgba(104, 0, 106, 0.1);
     max-width: fit-content;
     margin-inline: auto;
     justify-content: space-between;
+}
+
+.projects {
+    background-color: white;
+}
+
+.child {
+    display: inline-block;
+    border: 1px solid white;
+    padding: 1rem 1rem;
+    vertical-align: middle;
+    margin: 10px;
 }
 
 header {
     background-color: #D8D8F6;
     width: 100%;
     padding: 15px;
-    box-shadow: 0px 2px 4px rgba(104, 0, 106, 0.1);
-    margin: 0px;
+    box-shadow: 0 2px 4px rgba(104, 0, 106, 0.1);
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -43,9 +60,27 @@ p {
     margin: 20px;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     max-width: fit-content;
     margin-inline: auto;
+}
+
+h1 {
+    background-color: white;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: fit-content;
+    margin-inline: auto;
+}
+
+a {
+    background-color: white;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align: center;
 }
 
 nav a {
